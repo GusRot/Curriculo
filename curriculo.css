@@ -1,0 +1,58 @@
+html{
+    max-width: 700px;
+    margin: 0px auto;
+}
+
+header {
+    text-align: center;
+    color: dimgray;
+}
+
+
+.linha p {
+    display: inline-block;
+    margin: 0px;
+}
+
+.logo {
+    max-height: 18px;
+    vertical-align: bottom;
+    margin: 0px;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+body h3 {
+    color: steelblue;
+}
+
+.profissional {
+    list-style: none;
+    padding: 0px;
+}
+
+ul p {
+    padding: 0px 0px 4px 2.5%;
+    margin: 0px;
+    text-align: justify;
+    font-size: 14px;
+    display: inline-block;
+}
+
+ul a {
+    color: black;
+    }
+
+ul a:hover {
+    color: rgb(49, 88, 119);
+    }
+
+footer {
+    margin: 40px 0px 80px 80%;
+}
+
+footer p {
+    margin: 0px;
+}
