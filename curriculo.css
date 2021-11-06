@@ -39,6 +39,7 @@ h3 {
     padding-top: 1%;
     margin: auto auto auto 10%;
     width: 17%;
+    border-radius: 50%;
 }
 
 ul li:before {
@@ -46,7 +47,7 @@ ul li:before {
 }
 
 .linha p {
-    display: inline-block;
+    display: inline;
     margin: 0px;
 }
 
