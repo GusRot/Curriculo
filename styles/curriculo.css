@@ -125,6 +125,10 @@ ul li:last-child {
     margin: 0px;
 }
 
+.linha p a {
+    color: black;
+}
+
 .logo {
     height: 16px;
     vertical-align: top;
