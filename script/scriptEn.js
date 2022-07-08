@@ -134,8 +134,8 @@ const professional = [
     {
         title: "Adobe Commerce Developer - Webjump",
         period: "March / 2022 – current",
-        ativities: {
-            ativitie:
+        activities: {
+            activity:
                 "Company specialized in Adobe Commerce, where I work with Magento. I use the MVC framework in a docker environment with versioning on Bitbucket. Currently working with B2B",
             objectives: "Develop fast and flexible storefronts",
             improve:
@@ -160,7 +160,7 @@ const someProjects = [
     {
         title: "Adobe Commerce – Front-end Development",
         period: "Desenvolvimento Magento",
-        ativities: [
+        activities: [
             "HTML, CSS, JS, XML. (basic PHP).",
             "Less pre-processor, CSS architecture patterns, Mixin modeling, UI responsive.",
             "JQuery library, JQuery Widgets, Ajax requisitions, asynchronous functions.",
