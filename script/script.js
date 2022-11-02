@@ -49,39 +49,46 @@ const objectives = [
 
 const languages = [
     {
+        name: "Magento2",
+        class: "magento",
+        type: "original",
+    },
+    {
         name: "Javascript",
         class: "javascript",
+        type: "plain",
     },
     {
         name: "Typescript",
         class: "typescript",
+        type: "plain",
     },
     {
         name: "ReactJS",
         class: "react",
+        type: "plain",
     },
     {
         name: "HTML",
         class: "html5",
+        type: "plain",
     },
     {
         name: "CSS",
         class: "css3",
+        type: "plain",
     },
     {
         name: "SASS",
         class: "sass",
-    },
-    {
-        name: "Bootstrap",
-        class: "bootstrap",
+        type: "plain",
     },
 ];
 
 const professionalComplementary = [
     {
         title: "Consultor Financeiro Autônomo",
-        period: "Agosto / 2020 – Junho / 2021",
+        period: "Janeiro / 2020 – Junho / 2021",
         ativities: {
             ativitie:
                 "Responsável por analisar e avaliar a vida financeira dos clientes utilizando as melhores opções de produtos financeiros que o mercado brasileiro oferece de acordo com cada perfil.",
@@ -89,18 +96,6 @@ const professionalComplementary = [
                 "Desenvolver a melhor estratégia para os clientes atingirem os seus objetivos.",
             improve:
                 "Conhecimentos avançados sobre o mercado financeiro e cultura de atendimento ao cliente com excelência. ",
-        },
-    },
-    {
-        title: "Consultor Comercial STONE Pagamentos",
-        period: "Janeiro / 2020 – Agosto / 2020",
-        ativities: {
-            ativitie:
-                "Prospecção e captação de clientes; Consultoria de adquirência e assuntos relacionados; Análises de carteira de clientes; Administração do funil de vendas e prevenção de churn. ",
-            objectives:
-                "Aumentar a base de clientes, auxiliar os clientes aprimorar seus negócios aumentando suas vendas, além de aumentar seu NPS.",
-            improve:
-                "Aprimorei habilidade de negociação ao lidar com diferentes perfis de clientes e entender suas reais necessidades. Aprendi a dar e receber feedbacks com comunicação não-violenta.",
         },
     },
     {
@@ -157,7 +152,14 @@ const professional = [
 
 const courses = [
     {
-        name: "Front-End Developer ReactJS",
+        name: "Adobe Certified Expert Front-End Developer",
+        institution: "Adobe Commerce – 2022",
+        description:
+            "Desenvolver aplicações completas e performáticas de Adobe-Commerce.",
+        link: "https://1drv.ms/b/s!AvtEm98X2cVanssS264BUFuZE7mSLg?e=iF5qDp",
+    },
+    {
+        name: "Front-End Developer",
         institution: "Alura – 2022",
         description:
             "Desenvolver uma aplicação completa utilizando as tecnologias citadas acima.",
@@ -294,7 +296,7 @@ window.onload = function () {
     const languagesID = document.getElementById("languages");
     for (let i = 0; i < languages.length; i++) {
         languagesID.innerHTML += `<li>
-        <i class="devicon-${languages[i].class}-plain colored"></i>
+        <i class="devicon-${languages[i].class}-${languages[i].type} colored"></i>
         <p>${languages[i].name}</p>
     </li>`;
     }

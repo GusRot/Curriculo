@@ -18,11 +18,7 @@ function toggleMoreLess(moreLess) {
     }
 }
 
-const personal = [
-    "Birthdate: 13/01/1997",
-    "Address: Caruaru – Pernambuco",
-    "E-mail: gustavo.rotta@hotmail.com",
-];
+const personal = ["Birthdate: 13/01/1997", "E-mail: gustavo.rotta@hotmail.com"];
 
 const personalLinks = [
     {
@@ -50,39 +46,46 @@ const objectives = [
 
 const languages = [
     {
+        name: "Magento2",
+        class: "magento",
+        type: "original",
+    },
+    {
         name: "Javascript",
         class: "javascript",
+        type: "plain",
     },
     {
         name: "Typescript",
         class: "typescript",
+        type: "plain",
     },
     {
         name: "ReactJS",
         class: "react",
+        type: "plain",
     },
     {
         name: "HTML",
         class: "html5",
+        type: "plain",
     },
     {
         name: "CSS",
         class: "css3",
+        type: "plain",
     },
     {
         name: "SASS",
         class: "sass",
-    },
-    {
-        name: "Bootstrap",
-        class: "bootstrap",
+        type: "plain",
     },
 ];
 
 const professionalComplementary = [
     {
         title: "Financial Consultant freelance",
-        period: "August / 2020 – June / 2021",
+        period: "January / 2020 – June / 2021",
         activities: {
             activity:
                 "Responsible for analyzing and evaluating the financial life of customers using the best financial product options that the Brazilian market offers according to each profile.",
@@ -90,18 +93,6 @@ const professionalComplementary = [
                 "Develop the best strategy for customers to achieve their goals.",
             improve:
                 "Advanced knowledge of the financial market and developed a culture of excellent customer service. ",
-        },
-    },
-    {
-        title: "Commercial Consultant STONE ",
-        period: "January / 2020 – August / 2020",
-        activities: {
-            activity:
-                "Prospecting and attracting customers; portfolio analyses; Management of the sales funnel and churn prevention.",
-            objectives:
-                "Increase clients base, help customers improve their business by increasing their sales, and increasing their NPS.",
-            improve:
-                "Negotiation skills by dealing with different customer profiles and understanding their real needs. Learned to give and receive feedback with non-violent communication.",
         },
     },
     {
@@ -211,6 +202,12 @@ const someProjects = [
 
 const courses = [
     {
+        name: "Adobe Certified Expert Front-End Developer",
+        institution: "Adobe Commerce – 2022",
+        description: "Develop a complete application with Adobe-Commerce.",
+        link: "https://1drv.ms/b/s!AvtEm98X2cVanssS264BUFuZE7mSLg?e=iF5qDp",
+    },
+    {
         name: "Front-End Developer ReactJS",
         institution: "Alura – December / 2021",
         description:
@@ -293,7 +290,7 @@ window.onload = function () {
     const languagesID = document.getElementById("languages");
     for (let i = 0; i < languages.length; i++) {
         languagesID.innerHTML += `<li>
-        <i class="devicon-${languages[i].class}-plain colored"></i>
+        <i class="devicon-${languages[i].class}-${languages[i].type} colored"></i>
         <p>${languages[i].name}</p>
     </li>`;
     }
@@ -302,7 +299,7 @@ window.onload = function () {
     for (let i = 0; i < professional.length; i++) {
         professionalID.innerHTML += `<li>
         <p><strong>${professional[i].title}</strong>: ${professional[i].period} </p>
-        <button class="show-more-less" onclick = "toggleMoreLess(this)">Ver menos -</button>
+        <button class="show-more-less" onclick = "toggleMoreLess(this)">View less -</button>
         <div>
             <p class="arrow-before"><em>
                 <strong>activities:</strong>${professional[i].activities.activity}<br>
@@ -317,7 +314,7 @@ window.onload = function () {
     for (let i = 0; i < courses.length; i++) {
         coursesID.innerHTML += ` <li>
         <p><strong>${courses[i].name}</strong> - ${courses[i].institution} </p>
-        <button class="show-more-less" onclick = "toggleMoreLess(this)">Ver mais +</button>
+        <button class="show-more-less" onclick = "toggleMoreLess(this)">View more +</button>
         <div class="none">
             <p class="arrow-before"><em>${courses[i].description}  </em> 
             <a class="links" href=${courses[i].link} width="476" height="288" frameborder="0" scrolling="no" target="blank">*Certificado</a></p>
@@ -340,7 +337,7 @@ const professionalCompID = document.getElementById("professionalComplementary");
 for (let i = 0; i < professionalComplementary.length; i++) {
     professionalCompID.innerHTML += `<li>
         <p><strong>${professionalComplementary[i].title}</strong>: ${professionalComplementary[i].period} </p>
-        <button class="show-more-less" onclick = "toggleMoreLess(this)">Ver menos -</button>
+        <button class="show-more-less" onclick = "toggleMoreLess(this)">View less -</button>
         <div>
             <p class="arrow-before"><em>
                 <strong>activities:</strong>${professionalComplementary[i].activities.activity}<br>
@@ -356,7 +353,7 @@ const projectsReact = document.getElementById("projectsReact");
 for (let i = 0; i < someProjects.length; i++) {
     projectsReact.innerHTML += `<li>
         <p><strong>${someProjects[i].title}</strong>: ${someProjects[i].period} </p>
-        <button class="show-more-less" onclick = "toggleMoreLess(this)">Ver menos -</button>
+        <button class="show-more-less" onclick = "toggleMoreLess(this)">View less -</button>
         <div id="activityProject${i}">
         </div>
         <br>
