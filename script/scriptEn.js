@@ -135,7 +135,7 @@ const professional = [
     },
     {
         title: "Developer Web React",
-        period: "February / 2021 – current",
+        period: "January / 2021 – current",
         activities: {
             activity:
                 "Development of front-end applications in personal projects, maintenance, and implementation of new features. More than 20 completed projects and more than 300 commits that can be viewed on Github: https://github.com/GusRot",
@@ -188,7 +188,7 @@ const someProjects = [
             "Requests with the Apollo client from an endpoint developed in GRAPHQL.",
             "Styled components to handle states by props, like dark-mode.",
             "React-router-dom to handle routes(PLP, PDP, CartPage).",
-            `Deploy with Vercel (<a class="links" href="https://github.com/GusRot/e-commerce" target="blank">ler instructions on repository</a>):`,
+            `Deploy with Vercel (<a class="links" href="https://github.com/GusRot/e-commerce" target="blank">read instructions on repository</a>):`,
         ],
     },
     {
@@ -268,7 +268,6 @@ const complementaryIdioms = [
 const complementary = [
     "knowhow: Agile Methodology, Scrum, Lean, Kanban.",
     "Teamwork, proactive, resilient, dynamic",
-    "Availability to change address.",
 ];
 
 window.onload = function () {
@@ -317,7 +316,7 @@ window.onload = function () {
         <button class="show-more-less" onclick = "toggleMoreLess(this)">View more +</button>
         <div class="none">
             <p class="arrow-before"><em>${courses[i].description}  </em> 
-            <a class="links" href=${courses[i].link} width="476" height="288" frameborder="0" scrolling="no" target="blank">*Certificado</a></p>
+            <a class="links" href=${courses[i].link} width="476" height="288" frameborder="0" scrolling="no" target="blank">*certificate</a></p>
         </div>
     </li>`;
     }
@@ -328,7 +327,7 @@ window.onload = function () {
     }
     for (let i = 0; i < complementaryIdioms.length; i++) {
         complementaryID.innerHTML += `<li class="linha">${complementaryIdioms[i].idiom} <strong>${complementaryIdioms[i].level} </strong>.   
-        <a class="links" href=${complementaryIdioms[i].certificate}  width="476" height="288" frameborder="0" scrolling="no" target="blank">*Certificado</a>
+        <a class="links" href=${complementaryIdioms[i].certificate}  width="476" height="288" frameborder="0" scrolling="no" target="blank">*certificate</a>
     </li>`;
     }
 };
